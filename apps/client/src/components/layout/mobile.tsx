@@ -16,7 +16,7 @@ export default function MobileLayout({ navigation, teams }: any) {
         <ul role="list" className="flex flex-1 flex-col gap-y-7">
           <li>
             <ul role="list" className="-mx-2 space-y-1">
-              {navigation.map((item) => (
+              {navigation.map((item: any) => (
                 <li key={item.name}>
                   <a
                     href={item.href}
@@ -47,7 +47,7 @@ export default function MobileLayout({ navigation, teams }: any) {
               Your teams
             </div>
             <ul role="list" className="-mx-2 mt-2 space-y-1">
-              {teams.map((team) => (
+              {teams.map((team: any) => (
                 <li key={team.name}>
                   <a
                     href={team.href}
